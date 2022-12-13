@@ -18,10 +18,6 @@ public class CategoryDTO implements Serializable {
         this.name = name;
     }
 
-    public CategoryDTO(Category category) {
-
-    }
-
 
     public Long CategoryDTO (Category entity) {
         this.id = entity.getId();
