@@ -14,7 +14,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 
 @RestController
-@RequestMapping (value = "/produtcs")
+@RequestMapping (value = "/products")
 public class ProductResource {
 
     @Autowired
@@ -43,7 +43,7 @@ public class ProductResource {
           dto = service.insert(dto);
          URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                  .buildAndExpand(dto.getId()).toUri();
-          return ResponseEntity.created((uri).body(dto);
+         return ResponseEntity.created(uri).body(dto);
 
     }
     @PutMapping( value = "/{id}")

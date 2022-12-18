@@ -3,7 +3,6 @@ package com.example.dscatalog.dto;
 import com.example.dscatalog.entities.Category;
 import com.example.dscatalog.entities.Product;
 
-import javax.persistence.Column;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -88,9 +87,7 @@ public class ProductDTO implements Serializable {
         this.imgUrl = imgUrl;
     }
 
-    public Instant getDate() {
-        return date;
-    }
+    public Instant getDate() { return date;}
 
     public void setDate(Instant date) {
         this.date = date;

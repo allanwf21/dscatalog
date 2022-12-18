@@ -76,7 +76,7 @@ public class Product implements Serializable {
     }
 
     public String getImgUrl() {
-        return imgUrl;
+        return this.imgUrl;
     }
 
     public void setImgUrl(String imgUrl) {
@@ -84,7 +84,7 @@ public class Product implements Serializable {
     }
 
     public Instant getDate() {
-        return date;
+        return this.date;
     }
 
     public void setDate(Instant date) {
@@ -118,6 +118,5 @@ public class Product implements Serializable {
             return false;
         return true;
     }
-
 
 }
